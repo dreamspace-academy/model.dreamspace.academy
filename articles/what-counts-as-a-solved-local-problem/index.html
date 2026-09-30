@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Three tests, why a technically excellent build can fail all of them, and why a definition this strict makes the goal harder on purpose."><meta name="generator" content="Astro v5.18.2"><meta property="og:site_name" content="DreamSpace Academy"><meta property="og:title" content="What counts as a solved local problem | DreamSpace Academy"><meta property="og:description" content="Three tests, why a technically excellent build can fail all of them, and why a definition this strict makes the goal harder on purpose."><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><link rel="icon" type="image/svg+xml" href="/mark.svg"><link rel="canonical" href="https://dreamspace.academy/articles/what-counts-as-a-solved-local-problem"><title>What counts as a solved local problem | DreamSpace Academy</title><script>
+      // Runs before paint: a stored choice wins, otherwise the OS preference
+      // applies through CSS and no attribute is set.
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script><link rel="stylesheet" href="/_astro/_slug_.C5K_HtKo.css"></head> <body> <a class="skip" href="#main">Skip to content</a> <header class="site-head"> <div class="container head-inner"> <a class="brand" href="/" aria-label="DreamSpace Academy home">  <img class="brand-logo on-light" src="/logo.svg" alt="" width="130" height="46"> <img class="brand-logo on-dark" src="/logo-white.svg" alt="" width="130" height="46"> </a> <div class="head-tools"> <div class="search"> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 2a8 8 0 105.3 14l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"></path></svg> <input type="search" id="q" placeholder="Search" aria-label="Search this site" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="results"> <div class="search-out" id="results" role="listbox" aria-label="Search results" hidden></div> </div> <button class="theme-btn" id="theme" type="button" aria-label="Switch between light and dark" title="Switch theme"> <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 110-10 5 5 0 010 10zm0-13a1 1 0 011 1v1a1 1 0 11-2 0V5a1 1 0 011-1zm0 14a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM4 12a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm14 0a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zM6.2 6.2a1 1 0 011.4 0l.7.7a1 1 0 11-1.4 1.4l-.7-.7a1 1 0 010-1.4zm9.5 9.5a1 1 0 011.4 0l.7.7a1 1 0 11-1.4 1.4l-.7-.7a1 1 0 010-1.4zm2.1-9.5a1 1 0 010 1.4l-.7.7a1 1 0 11-1.4-1.4l.7-.7a1 1 0 011.4 0zm-9.5 9.5a1 1 0 010 1.4l-.7.7a1 1 0 01-1.4-1.4l.7-.7a1 1 0 011.4 0z"></path></svg> <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13a9 9 0 11-10-10 7 7 0 1010 10z"></path></svg> </button> </div> <details class="menu"> <summary>Menu</summary> <nav aria-label="Site sections"> <a href="/">Overview</a> <a href="/organisation">About the organisation</a><a href="/organisation/why">Why this work exists</a><a href="/organisation/theory-of-change">Theory of change</a><a href="/organisation/lifecycle">The DreamSpace Lifecycle</a><a href="/organisation/labs">Labs &amp; research</a><a href="/organisation/ventures">Ventures &amp; incubation</a><a href="/organisation/impact">Impact &amp; the global goals</a><a href="/organisation/sustainability">How the work is funded</a><a href="/approach">Approach</a><a href="/learning-journey">Learning journey</a><a href="/facilitation">Facilitation</a><a href="/assessment">Assessment</a><a href="/programmes">Programmes &amp; domains</a><a href="/makerspace">The model</a><a href="/makerspace/enterprise">Innovation &amp; enterprise</a><a href="/makerspace/pathway">Venture pathway</a><a href="/makerspace/replication">Replication</a><a href="/makerspace/measurement">Measurement</a><a href="/faq">Questions</a><a href="/activities">Activities</a><a href="/articles">Articles</a><a href="/glossary">Glossary</a><a href="/references">References</a> <a href="/release-history">Release history</a> </nav> </details> </div> </header> <div class="site-layout"> <aside class="side-nav" aria-label="Reference sections"> <div class="side-inner"> <span class="side-label">Start here</span> <a class="side-home" href="/">Overview</a>  <span class="side-label">The organisation</span> <a href="/organisation">About the organisation</a><a href="/organisation/why">Why this work exists</a><a href="/organisation/theory-of-change">Theory of change</a><a href="/organisation/lifecycle">The DreamSpace Lifecycle</a><a href="/organisation/labs">Labs &amp; research</a><a href="/organisation/ventures">Ventures &amp; incubation</a><a href="/organisation/impact">Impact &amp; the global goals</a><a href="/organisation/sustainability">How the work is funded</a> <span class="side-label">The education system</span> <a href="/approach">Approach</a><a href="/learning-journey">Learning journey</a><a href="/facilitation">Facilitation</a><a href="/assessment">Assessment</a><a href="/programmes">Programmes &amp; domains</a> <span class="side-label">The MakerSpace</span> <a href="/makerspace">The model</a><a href="/makerspace/enterprise">Innovation &amp; enterprise</a><a href="/makerspace/pathway">Venture pathway</a><a href="/makerspace/replication">Replication</a><a href="/makerspace/measurement">Measurement</a> <span class="side-label">Library</span> <a href="/faq">Questions</a><a href="/activities">Activities</a><a class="active" href="/articles">Articles</a><a href="/glossary">Glossary</a><a href="/references">References</a> <div class="side-version"> <a href="/release-history">Version 4.1.0</a><br>
+Updated 3 September 2026 </div> </div> </aside> <main id="main"> <header class="page-hero"> <div class="container"> <p class="eyebrow">Article</p> <h1>What counts as a solved local problem</h1> <p class="lead">Three tests, why a technically excellent build can fail all of them, and why a definition this strict makes the goal harder on purpose.</p> <div class="meta"> <span>Version 4.1.0</span> <span>Published 27 August 2026</span> <span>Updated 3 September 2026</span> </div> </div> </header> <div class="section"> <div class="container doc-layout"> <aside class="toc" aria-label="On this page"> <strong>On this page</strong> <a href="#problem">The problem with the word</a><a href="#tests">Three tests</a><a href="#screen">What happened when they were applied</a><a href="#literature">Where the term comes from</a><a href="#cost">What a strict definition costs</a> </aside> <article class="prose"> <section id="problem"> <h2>The problem with the word “impact”</h2> <p>
+Every organisation in this sector can produce a list of projects. Very few can say which of
+      them changed anything, because the words used to describe them do not distinguish between
+      four quite different achievements.
+</p> <figure class="diagram"> <svg class="diagram-svg" viewBox="0 0 740 330" role="img" aria-label="A four-rung ladder narrowing from learner project, to functioning prototype, to an innovation tested by an external user, to a grassroots innovation that meets all three tests. The drop-off between rungs is what gets measured."> <g> <rect x="30" y="20" width="600" height="60" rx="12" fill="#efe8fb"></rect> <text class="d-label" x="52" y="46">1. A learner project</text> <text class="d-sub" x="52" y="66">Made as part of a programme. Valuable. Not yet a claim about anything.</text> <text class="d-sub" x="648" y="55">most</text> </g> <g> <rect x="70" y="90" width="520" height="60" rx="12" fill="#e6daf8"></rect> <text class="d-label" x="92" y="116">2. A functioning prototype</text> <text class="d-sub" x="92" y="136">It works. Tested on the bench, by the person who built it.</text> </g> <g> <rect x="110" y="160" width="440" height="60" rx="12" fill="#d6c2f4"></rect> <text class="d-label" x="132" y="186">3. Tested by an external user</text> <text class="d-sub" x="132" y="206">Someone outside the makerspace has actually used it.</text> </g> <g> <rect x="150" y="230" width="360" height="66" rx="12" fill="#4a1e8c"></rect> <text class="d-label d-invert" x="172" y="256">4. A grassroots innovation</text> <text class="d-invert-sub" x="172" y="276">The problem came from the community, a user outside</text> <text class="d-invert-sub" x="172" y="292">the makerspace has tested it, someone depends on it.</text> <text class="d-sub" x="530" y="268">fewest</text> </g> <path d="M660 30 v266" fill="none" stroke="#f47a1f" stroke-width="2" stroke-dasharray="5 5"></path> <text class="d-sub" x="672" y="150">the</text> <text class="d-sub" x="672" y="166">drop-off</text> <text class="d-sub" x="672" y="182">is the</text> <text class="d-sub" x="672" y="198">measure</text> </svg> <figcaption>
+Four rungs that are routinely reported as one. Only the fourth is a solved local problem.
+</figcaption> </figure> <p>
+A learner project is valuable. A working prototype is a real accomplishment. A prototype
+      that someone outside the building has actually used is rarer and better. And a grassroots
+      innovation, the fourth rung, is a different kind of thing entirely.
+</p> <p>
+The stated goal is <strong>one hundred local challenges solved by local people, by
+      2050</strong>. A goal like that is only meaningful if the countable unit is defined
+      precisely enough that the definition cannot be moved when the count is
+      disappointing.
+</p> </section> <section id="tests"> <h2>Three tests, and all three must hold</h2> <div class="grid-3"> <div class="card"> <div class="number">1</div> <h3>The problem came from the community</h3> <p>
+Somebody who lives with the problem named it. It fails when the problem was set for the
+          occasion, a competition brief, a funder’s theme, a lab exercise, or the maker’s own
+          curiosity. <strong>Who relayed it is not the test:</strong> a mentor naming a real
+          community problem passes.
+</p> </div> <div class="card"> <div class="number">2</div> <h3>A user outside the makerspace has tested it</h3> <p>
+Not a classmate. Not the person who built it. Someone with no stake in it going well.
+</p> </div> <div class="card"> <div class="number">3</div> <h3>Someone depends on the outcome</h3> <p>
+There is a real consequence if it stops working. This is what separates a solution from a
+          demonstration.
+</p> </div> </div> <p>
+The form does not matter, a product, a service or an initiative all qualify. The three
+      tests are about origin, contact and stake, not about technology.
+</p> </section> <section id="screen"> <h2>What happened when they were applied to the academy's own record</h2> <p>
+Past projects that had been catalogued as grassroots innovations were screened against these
+      three tests.
+</p> <div class="grid-2"> <div class="card"> <h3>Most failures were on the first test</h3> <p>
+Among the entries that definitively failed, the largest group failed on
+<strong>problem origin</strong>: the problem had been framed by a competition or a lab
+          rather than by the community. Several of these were technically excellent builds.
+</p> </div> <div class="card"> <h3>The largest group could not be decided</h3> <p>
+A substantial bloc could not be decided at all, not because the work failed, but because
+<strong>the record stops after the build</strong>. Whether a user existed was never
+          documented, so it cannot now be established either way.
+</p> </div> </div> <div class="notice"> <span class="notice-label">The undecided group</span> <p style="margin-bottom:0">
+“Not known” is a different result from “it failed”, and it points at something
+        fixable: the record ended where the interesting question began. It is also a practical
+        argument for the <a href="/makerspace/enterprise#selling">sell loop</a>, a sale leaves a
+        buyer, a price and a date behind it without anyone having to remember to record them.
+</p> </div> <p>
+A note on earlier figures: published counts of “changemakers” from before this gate
+      cannot be read as counts under the definition on this page without re-screening, and are not
+      presented that way.
+</p> </section> <section id="literature"> <h2>Where the term comes from</h2> <p>
+“Grassroots innovation” is not a phrase coined here, and using it carries obligations. The
+      most-cited definition describes innovation driven by social need and ideology rather than
+      profit, rooted in the community that experiences the problem, and resourced through grants
+      and voluntary effort rather than markets<span class="cite">[<a href="/references#seyfang2007" title="Seyfang, G. &#38; Smith, A. (2007). Grassroots Innovations for Sustainable Development: Towards a New Research and Policy Agenda">46</a>]</span>. A South Asian strand
+      documents innovation by knowledge-rich but economically poor people, built on unaided
+      innovation and traditional knowledge, and usefully names <em>empathetic
+      innovators</em>, people who solve a problem they did not personally
+      suffer<span class="cite">[<a href="/references#gupta2012" title="Gupta, A. K. (2012). Innovations for the Poor by the Poor">47</a>]</span>.
+</p> <p>
+Two things follow from taking the source seriously.
+</p> <ul class="checklist"> <li> <strong>The empathetic case is legitimate.</strong> A learner does not have to have lived
+        the problem. They do have to have got it from someone who did, which is exactly what the
+        first test checks.
+</li> <li> <strong>There is a real difference worth naming.</strong> The grassroots-innovation
+        tradition positions itself partly <em>against</em> the market economy. This model treats a
+        grassroots innovation as a possible waypoint toward an impact venture. That is a real
+        difference of orientation rather than a detail, and it is stated here rather than left
+        implicit in the borrowed term.
+</li> </ul> </section> <section id="cost"> <h2>What a strict definition costs</h2> <p>
+A looser definition would produce a bigger number. What the strict one gives up:
+</p> <p>
+A strict gate means many good projects do not meet it. A technically excellent build with no
+      community origin and no outside user leaves its maker an <strong>Innovator</strong> rather
+      than a Changemaker, a complete destination in its own right.
+      It means the academy's historical figures need re-screening before they can be reused. And it
+      means the goal of one hundred by 2050 is harder than it would otherwise be.
+</p> <blockquote> <p style="margin-bottom:0">
+A strict definition is what allows the number to stand when someone asks how it was
+        reached.
+</p> </blockquote> <p>
+There is also a live tension that has not been resolved. If the
+      real historical rate of solved local problems turns out to be much higher than assumed here,
+      then one hundred by 2050 is <em>too soft</em> and should be revised upward, while a tightened
+      definition pushes the other way. Definition and target therefore have to be decided together.
+      Adjusting one alone sets a target against a definition that no longer applies.
+</p> </section> </article> </div> </div> </main> </div> <footer class="site-foot"> <div class="container"> <div class="foot-grid"> <div> <h2>DreamSpace <span>Academy</span></h2> <p class="foot-tagline">Co-Creating The Dreams</p> <p>
+A non-profit social enterprise that co-creates an ecosystem to tackle local
+              socio-economic and environmental challenges through education, innovation and
+              entrepreneurship.
+</p> </div> <div> <h2>The organisation</h2> <ul class="foot-links"> <li><a href="/organisation">About the organisation</a></li> <li><a href="/organisation/why">Why this work exists</a></li> <li><a href="/organisation/theory-of-change">Theory of change</a></li> <li><a href="/organisation/lifecycle">The DreamSpace Lifecycle</a></li> <li><a href="/organisation/impact">Impact &amp; the global goals</a></li> </ul> </div> <div> <h2>Education &amp; the MakerSpace</h2> <ul class="foot-links"> <li><a href="/approach">The education approach</a></li> <li><a href="/learning-journey">Learning journey</a></li> <li><a href="/assessment">Assessment</a></li> <li><a href="/makerspace">The MakerSpace model</a></li> <li><a href="/makerspace/replication">Replication</a></li> </ul> </div> </div> <div class="update">
+Version 4.1.0. Published <time datetime="2026-08-27">27 August 2026</time>,
+          updated <time datetime="2026-09-03">3 September 2026</time>.
+<a href="/release-history">Release history</a> </div> </div> </footer> <script>
+      (function () {
+        var root = document.documentElement;
+        var btn = document.getElementById('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+        btn.addEventListener('click', function () {
+          var current = root.dataset.theme || (prefersDark.matches ? 'dark' : 'light');
+          var next = current === 'dark' ? 'light' : 'dark';
+          root.dataset.theme = next;
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+
+        var input = document.getElementById('q');
+        var out = document.getElementById('results');
+        var index = null;
+        var loading = false;
+
+        function load() {
+          if (index || loading) return;
+          loading = true;
+          fetch('/search.json')
+            .then(function (r) { return r.json(); })
+            .then(function (d) { index = d; render(); })
+            .catch(function () { loading = false; });
+        }
+
+        function score(entry, terms) {
+          var title = entry.t.toLowerCase();
+          var body = (entry.d || '').toLowerCase();
+          var total = 0;
+          for (var i = 0; i < terms.length; i++) {
+            var at = title.indexOf(terms[i]);
+            var ab = body.indexOf(terms[i]);
+            if (at === -1 && ab === -1) return 0;
+            if (at === 0) total += 12;
+            else if (at > -1) total += 6;
+            if (ab > -1) total += 1;
+          }
+          return total;
+        }
+
+        function render() {
+          var raw = input.value.trim().toLowerCase();
+          if (raw.length < 2) { close(); return; }
+          if (!index) { load(); return; }
+          var terms = raw.split(/\s+/);
+          var hits = [];
+          for (var i = 0; i < index.length; i++) {
+            var s = score(index[i], terms);
+            if (s > 0) hits.push([s, index[i]]);
+          }
+          hits.sort(function (a, b) { return b[0] - a[0]; });
+          hits = hits.slice(0, 10);
+
+          if (!hits.length) {
+            out.innerHTML = '<p class="search-none">Nothing matches &ldquo;' + raw.replace(/[<>&]/g, '') + '&rdquo;.</p>';
+          } else {
+            var html = '';
+            for (var j = 0; j < hits.length; j++) {
+              var e = hits[j][1];
+              html += '<a href="' + e.h + '"><em>' + e.k + '</em><b>' + e.t + '</b>' +
+                      (e.d ? '<span>' + e.d.slice(0, 96) + (e.d.length > 96 ? '…' : '') + '</span>' : '') + '</a>';
+            }
+            out.innerHTML = html;
+          }
+          out.hidden = false;
+          input.setAttribute('aria-expanded', 'true');
+        }
+
+        function close() {
+          out.hidden = true;
+          input.setAttribute('aria-expanded', 'false');
+        }
+
+        input.addEventListener('focus', load);
+        input.addEventListener('input', render);
+        input.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') { input.value = ''; close(); input.blur(); }
+          if (e.key === 'ArrowDown' && !out.hidden) {
+            var first = out.querySelector('a');
+            if (first) { e.preventDefault(); first.focus(); }
+          }
+        });
+        document.addEventListener('click', function (e) {
+          if (!e.target.closest('.search')) close();
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === '/' && document.activeElement !== input && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) {
+            e.preventDefault();
+            input.focus();
+          }
+        });
+      })();
+    </script> </body> </html>
